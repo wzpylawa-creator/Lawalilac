@@ -927,4 +927,4 @@ _ _           ✦ Lilac Moon Server 🌌✨ _ _"""
     await bot.process_commands(message)
 
 
-bot.run("MTQ3MDczMTc1MjAxMTIwMjU3MA.GK4Vhs.U6DoA8PohVzY1jamXJYAwZuXoEsxKQqFYVcg-U")
+client.run(os.getenv("TOKEN"))
