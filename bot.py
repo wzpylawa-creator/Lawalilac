@@ -1,3 +1,4 @@
+import os
 import discord
 from discord.ext import commands, tasks
 from discord.ui import View, Select, Button, UserSelect
@@ -10,7 +11,6 @@ import re
 import time
 import typing
 import json
-import os
 import pytz
 
 intents = discord.Intents.default()
@@ -925,5 +925,7 @@ _ _           ✦ Lilac Moon Server 🌌✨ _ _"""
 
     # Make sure other commands still work
     await bot.process_commands(message)
-    
-bot.run("MTQ3MDczMTc1MjAxMTIwMjU3MA.G2-KAF.vy3Z0GTZcv43Gwh_JfsHIiAvfVmyM8WBdDCjg4")
+
+# Change line 929 to this:
+bot.run(os.environ.get("DISCORD_TOKEN"))
+
